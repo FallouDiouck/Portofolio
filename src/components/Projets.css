@@ -1,0 +1,119 @@
+.projets {
+  padding: clamp(64px, 10vw, 120px) clamp(24px, 5vw, 64px);
+}
+
+.projets__titre {
+  max-width: 1100px;
+  margin: 0 auto 72px;
+  font-size: clamp(2.75rem, 7vw, 5.5rem);
+  letter-spacing: -0.02em;
+}
+
+.projets__titre span {
+  color: var(--accent);
+}
+
+.projets__grille {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+}
+
+/* La carte */
+.carte-projet {
+  display: flex;
+  flex-direction: column;
+  background: var(--carte);
+  border: 1px solid var(--ligne);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: border-color 0.25s, transform 0.25s;
+}
+
+.carte-projet:hover {
+  border-color: var(--accent);
+}
+
+.carte-projet__image {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid var(--ligne);
+}
+
+.carte-projet__contenu {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 24px;
+}
+
+.carte-projet__titre {
+  font-size: 1.75rem;
+}
+
+.carte-projet__description {
+  color: var(--gris);
+  margin: 10px 0 18px;
+}
+
+/* Les technologies */
+.carte-projet__technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+}
+
+.carte-projet__technologie {
+  border: 1px solid var(--ligne);
+  border-radius: 999px;
+  padding: 4px 12px;
+  font-size: 0.75rem;
+  color: var(--gris);
+}
+
+/* Les boutons en bas */
+.carte-projet__liens {
+  display: flex;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 24px;
+}
+
+.carte-projet__lien {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 18px;
+  border: 1px solid var(--ligne);
+  border-radius: 6px;
+  color: var(--texte);
+  text-decoration: none;
+  transition: border-color 0.25s;
+}
+
+.carte-projet__lien:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.carte-projet__lien--voir {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--fond);
+}
+
+.carte-projet__lien--voir:hover{
+  color: var(--fond);
+  background: var(--laccent);
+}
+
+.carte-projet__lien {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}

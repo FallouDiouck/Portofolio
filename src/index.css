@@ -1,0 +1,66 @@
+:root {
+  --fond: #0e0e10;
+  --texte: #f2efe9;
+  --gris: #8a8a8f;
+  --accent: #c6f432;
+  --laccent: #d5f766;
+  --ligne: #26262a;
+  --police-titre: 'Fraunces', serif;
+  --police-texte: 'Karla', sans-serif;
+}
+
+[data-theme="light"] {
+  --fond: #f6f4ef;
+  --texte: #141416;
+  --gris: #5f5f66;
+  --accent: #5b7a00;
+  --ligne: #dcd9d2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--fond);
+  color: var(--texte);
+  font-family: var(--police-texte);
+  line-height: 1.7;
+}
+
+h1, h2, h3 {
+  font-family: var(--police-titre);
+  line-height: 1.05;
+}
+
+h1 {
+  font-size: clamp(3rem, 9vw, 7rem);
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+::view-transition-old(root) {
+  z-index: 1;
+}
+
+::view-transition-new(root) {
+  z-index: 9999;
+}
+
+:root {
+  --carte: #151518;
+}
+
+[data-theme="light"] {
+  --carte: #ffffff;
+}
