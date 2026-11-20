@@ -6,13 +6,14 @@ export const technologies = [
     { nom: "React", icone: "react", niveau: "apprentissage" },
   ]},
   { id: 2, categorie: "Backend", items: [
-    { nom: "Python", icone: "python", niveau: "apprentissage" },
     { nom: "PHP", icone: "php", niveau: "avance" },
+    { nom: "Python", icone: "python", niveau: "apprentissage" },
     { nom: "Java", icone: "java", niveau: "apprentissage" },
+    { nom: "Laravel", icone: "laravel", niveau: "apprentissage" },
   ]},
   { id: 3, categorie: "Database", items: [
-    { nom: "SQLite", icone: "sqlite", niveau: "apprentissage" },
     { nom: "MySQL", icone: "mysql", niveau: "avance" },
+    { nom: "SQLite", icone: "sqlite", niveau: "apprentissage" },
   ]},
   { id: 4, categorie: "Outils", items: [
     { nom: "Git", icone: "git", niveau: "avance" },
