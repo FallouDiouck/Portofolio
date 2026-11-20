@@ -7,6 +7,7 @@
   --ligne: #26262a;
   --police-titre: 'Fraunces', serif;
   --police-texte: 'Karla', sans-serif;
+  --titre_section: clamp(2rem, 5vw, 3.5rem);
 }
 
 [data-theme="light"] {
