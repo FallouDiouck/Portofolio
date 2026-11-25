@@ -6,6 +6,7 @@ function Navbar() {
       <a href="#accueil" className="navbar__logo">Fallou</a>
 
       <nav className="navbar__liens">
+        <a href="#technologies">Technologies</a>
         <a href="#projets">Projets</a>
         <a href="#contact">Contact</a>
         <ThemeToggle />

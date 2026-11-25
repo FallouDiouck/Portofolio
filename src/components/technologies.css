@@ -1,5 +1,5 @@
 .technologies {
-  padding: clamp(64px, 10vw, 120px) clamp(24px, 5vw, 64px);
+  padding: clamp(64px, 8vw, 100px) clamp(24px, 5vw, 64px) 0;
 }
 
 .technologies__liste {
@@ -46,8 +46,7 @@
 
 .technologies__items li {
   padding: 8px 18px;
-  border: 1px solid var(--ligne);
-  border-radius: 999px;
+  border: 1px solid var(--texte);
   cursor: default;
   transition: border-color 0.25s, color 0.25s;
 }
@@ -58,15 +57,19 @@
 }
 
 .technologies__items .avance {
-  border: 1px solid var(--accent);
   background: rgba(91, 122, 0, 0.1);
 }
 
 .technologies__items .apprentissage {
   color: var(--gris);
-  border: 1px dashed var(--accent);
+  border: 1px solid var(--ligne);
   background: rgba(91, 122, 0, 0.05);
 }
+
+.technologies__items .apprentissage:hover {
+  border: 1px dashed var(--accent);
+}
+
 
 @media (max-width: 700px) {
   .technologies__groupe {

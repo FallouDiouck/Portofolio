@@ -1,10 +1,10 @@
 import { FiGithub, FiExternalLink } from "react-icons/fi"
 import { LuSquareArrowOutUpRight } from "react-icons/lu"
-import {projets} from "../data/projets"
-import "./Projets.css"
+import { projets } from "../data/projets"
+import "./Projet.css"
 
-function CarteProjets({titre, description, image, technologies, code, demo}) {
-    return(
+function CarteProjets({ titre, description, image, technologies, code, demo }) {
+    return (
         <div className="carte-projet">
             <img src={image} alt={titre} className="carte-projet__image" />
             <div className="carte-projet__contenu">
@@ -27,11 +27,14 @@ function CarteProjets({titre, description, image, technologies, code, demo}) {
 function Projets() {
     return (
         <section className="projets" id="projets">
-            <h2 className="projets__titre">Ce que j'ai <br /><span>réalisé</span></h2>
-            <div className="projets__grille">
-                {projets.map((projet) => (
-                    <CarteProjets key={projet.id} {...projet} />
-                ))}
+            <div className="all">
+                <p className="realis">Realisation</p>
+                <h2 className="projets__titre">Ce que j'ai <br /><span>réalisé</span></h2>
+                <div className="projets__grille">
+                    {projets.map((projet) => (
+                        <CarteProjets key={projet.id} {...projet} />
+                    ))}
+                </div>
             </div>
         </section>
     )

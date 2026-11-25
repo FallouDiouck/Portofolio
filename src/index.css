@@ -5,6 +5,7 @@
   --accent: #c6f432;
   --laccent: #d5f766;
   --ligne: #26262a;
+  --carte: #151518;
   --police-titre: 'Fraunces', serif;
   --police-texte: 'Karla', sans-serif;
   --titre_section: clamp(2rem, 5vw, 3.5rem);
@@ -16,6 +17,7 @@
   --gris: #5f5f66;
   --accent: #5b7a00;
   --ligne: #dcd9d2;
+  --carte: #ffffff;
 }
 
 * {

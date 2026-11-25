@@ -1,4 +1,5 @@
 import Typewriter from "./Typewriter"
+import { FiArrowRight } from "react-icons/fi"
 
 const phrases = [
     "Developpeur en formation ",
@@ -20,7 +21,7 @@ function Hero() {
                     animations et des formulaires, avec des technologies modernes. Chaque projet 
                     est pensé pour être lisible, fluide et simple à faire évoluer.</p>
 
-                <a href="#projets" className="hero__bouton">VOIR MES PROJETS</a>
+                <a href="#projets" className="hero__bouton">Voir mes projets <FiArrowRight aria-hidden="true" /></a>
             </div>
 
             <div className="hero__photo">

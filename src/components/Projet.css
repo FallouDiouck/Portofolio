@@ -1,5 +1,19 @@
 .projets {
-  padding: clamp(64px, 10vw, 120px) clamp(24px, 5vw, 64px);
+  padding: clamp(48px, 7vw, 80px) clamp(24px, 5vw, 64px);
+}
+
+.all{
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+.realis {
+  font-size: 0.85rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gris);
+  margin-bottom: 16px;
 }
 
 .projets__titre {
@@ -34,6 +48,22 @@
 
 .carte-projet:hover {
   border-color: var(--accent);
+}
+
+.carte-projet .carte-projet__image {
+  transition: transform 0.5s;
+}
+
+.carte-projet:hover .carte-projet__image {
+  transform: scale(1.05);
+}
+
+.carte-projet__titre {
+  transition: color 0.25s;
+}
+
+.carte-projet:hover .carte-projet__titre {
+  color: var(--accent);
 }
 
 .carte-projet__image {

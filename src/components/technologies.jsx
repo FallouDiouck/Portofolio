@@ -16,8 +16,8 @@ function Technologies() {
                                         <img
                                             src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${item.icone}/${item.icone}-original.svg`}
                                             alt=""
-                                            width="20"
-                                            height="20"
+                                            width="15"
+                                            height="15"
                                             className={item.mono ? "icone--mono" : ""}
                                         />
                                         {item.nom}

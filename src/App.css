@@ -347,17 +347,42 @@
 }
 
 .hero__contenu a{
-  color: var(--accent);
+  background: var(--accent);
+  color: var(--fond);
+  border-radius: 4px;
+  text-transform: uppercase;
+  text-align: center;
   text-decoration: none;
   font-weight: 700;
-  padding: 5px;
+  padding: 14px 28px;
   font-size: 0.8rem;
+  transition: 0.3s;
+}
+
+.hero__contenu a:hover {
+  background: var(--fond);
+  color: var(--accent);
+  border: 1px solid var(--accent);
 }
 
 .hero__nom {
   color: var(--accent);
   font-weight: 700;
   font-style: italic;
+}
+
+.hero__bouton {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero__bouton svg {
+  transition: transform 0.25s;
+}
+
+.hero__bouton:hover svg {
+  transform: translateX(4px);
 }
 
 .theme-toggle {

@@ -1,0 +1,185 @@
+.contact {
+  padding: clamp(48px, 7vw, 80px) clamp(24px, 5vw, 64px);
+}
+
+.contact__grille {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.contact__etiquette {
+  font-size: 0.85rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gris);
+  margin-bottom: 16px;
+}
+
+.contact__titre {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 20px;
+}
+
+.contact__titre span {
+  color: var(--accent);
+}
+
+.contact__texte {
+  color: var(--gris);
+  max-width: 44ch;
+  margin-bottom: 32px;
+}
+
+.contact__coordonnees,
+.contact__reseaux {
+  list-style: none;
+  padding: 0;
+}
+
+.contact__coordonnees {
+  display: grid;
+  gap: 14px;
+}
+
+.contact__coordonnees li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 18px;
+  background: var(--carte);
+  border: 1px solid var(--ligne);
+  border-radius: 8px;
+  transition: border-color 0.25s;
+}
+
+.contact__coordonnees li:hover {
+  border-color: var(--accent);
+}
+
+.contact__icone {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: var(--fond);
+  font-size: 1.1rem;
+}
+
+.contact__coordonnees li div {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.contact__label {
+  display: block;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gris);
+}
+
+.contact__coordonnees a {
+  color: var(--texte);
+  text-decoration: none;
+}
+
+.contact__coordonnees a:hover {
+  color: var(--accent);
+}
+
+.contact__reseaux {
+  display: flex;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.contact__reseaux a {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--ligne);
+  border-radius: 50%;
+  color: var(--texte);
+  transition: border-color 0.25s, color 0.25s;
+}
+
+.contact__reseaux a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* Le formulaire */
+.contact__form {
+  background: var(--carte);
+  border: 1px solid var(--ligne);
+  border-radius: 8px;
+  padding: 28px;
+  display: grid;
+  gap: 18px;
+}
+
+.contact__champ label {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--gris);
+  margin-bottom: 6px;
+}
+
+.contact__champ input,
+.contact__champ textarea {
+  width: 100%;
+  padding: 13px 14px;
+  background: var(--fond);
+  border: 1px solid var(--ligne);
+  border-radius: 6px;
+  color: var(--texte);
+  font: inherit;
+  transition: border-color 0.25s;
+}
+
+.contact__champ textarea {
+  resize: vertical;
+}
+
+.contact__champ input:focus,
+.contact__champ textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.contact__bouton {
+  min-height: 48px;
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  background: var(--accent);
+  color: var(--fond);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.25s;
+}
+
+.contact__bouton:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.contact__statut {
+  min-height: 1.5em;
+  font-size: 0.9rem;
+}
+
+.contact__statut--succes { color: var(--accent); }
+.contact__statut--erreur { color: #e5484d; }
+
+@media (max-width: 800px) {
+  .contact__grille { grid-template-columns: 1fr; gap: 40px; }
+}
