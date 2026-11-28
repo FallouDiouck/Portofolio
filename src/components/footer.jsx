@@ -1,7 +1,7 @@
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa"
 import { FiArrowUp } from "react-icons/fi"
 import { contact } from "../data/contact"
-import "./Footer.css"
+import "./footer.css"
 
 const liens = [
     { nom: "Accueil", href: "#accueil" },

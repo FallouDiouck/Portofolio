@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa"
 import { contact } from "../data/contact"
-import "./Contact.css"
+import "./contact.css"
 
 const ENDPOINT = "https://formspree.io/f/[TON-ID]"
 const VIDE = { nom: "", email: "", message: "", _gotcha: "" }
