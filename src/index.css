@@ -20,6 +20,18 @@
   --carte: #ffffff;
 }
 
+:root {
+  --verre: rgba(255, 255, 255, 0.08);
+  --verre-bord: rgba(255, 255, 255, 0.18);
+  --verre-reflet: rgba(255, 255, 255, 0.35);
+}
+
+[data-theme="light"] {
+  --verre: rgba(255, 255, 255, 0.6);
+  --verre-bord: rgba(0, 0, 0, 0.08);
+  --verre-reflet: rgba(255, 255, 255, 0.95);
+}
+
 * {
   margin: 0;
   padding: 0;
